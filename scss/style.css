@@ -1,0 +1,358 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("./font/Mulish-VariableFont_wght.ttf") format("ttf"), url("./font/Mulish-Italic-VariableFont_wght.ttf") format("ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #333;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("./font/Mulish-VariableFont_wght.ttf") format("ttf"), url("./font/Mulish-Italic-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("./font/Mulish-VariableFont_wght.ttf") format("ttf"), url("./font/Mulish-Italic-VariableFont_wght.ttf") format("ttf");
+}
+.title-small {
+  letter-spacing: 0.3rem;
+  font-size: 1.7rem;
+}
+
+.bar-skill-progress-nginx, .bar-skill-progress-mongodb, .bar-skill-progress-angular, .bar-skill-progress-nestjs, .bar-skill-progress-nodejs, .bar-skill-progress-typescript, .bar-skill-progress-javascript, .bar-skill-progress-scss, .bar-skill-progress-css, .bar-skill-progress-html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #00c3ff;
+}
+
+.bar-skill-dot-nginx, .bar-skill-dot-mongodb, .bar-skill-dot-angular, .bar-skill-dot-nestjs, .bar-skill-dot-nodejs, .bar-skill-dot-typescript, .bar-skill-dot-javascript, .bar-skill-dot-scss, .bar-skill-dot-css, .bar-skill-dot-html {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #2980b9;
+  top: -2.5px;
+  transform: rotate(45deg);
+}
+
+.bar-skill-progress-html {
+  width: 85%;
+}
+
+.bar-skill-dot-html {
+  left: calc(85% - 5px);
+}
+
+.bar-skill-progress-css {
+  width: 73%;
+}
+
+.bar-skill-dot-css {
+  left: calc(73% - 5px);
+}
+
+.bar-skill-progress-scss {
+  width: 55%;
+}
+
+.bar-skill-dot-scss {
+  left: calc(55% - 5px);
+}
+
+.bar-skill-progress-javascript {
+  width: 45%;
+}
+
+.bar-skill-dot-javascript {
+  left: calc(45% - 5px);
+}
+
+.bar-skill-dot-typescript {
+  left: calc(50% - 5px);
+}
+
+.bar-skill-progress-typescript {
+  width: 50%;
+}
+
+.bar-skill-dot-nodejs {
+  left: calc(65% - 5px);
+}
+
+.bar-skill-progress-nodejs {
+  width: 65%;
+}
+
+.bar-skill-dot-nestjs {
+  left: calc(25% - 5px);
+}
+
+.bar-skill-progress-nestjs {
+  width: 25%;
+}
+
+.bar-skill-progress-angular {
+  width: 60%;
+}
+
+.bar-skill-dot-angular {
+  left: calc(60% - 5px);
+}
+
+.bar-skill-progress-mongodb {
+  width: 25%;
+}
+
+.bar-skill-dot-mongodb {
+  left: calc(25% - 5px);
+}
+
+.bar-skill-progress-nginx {
+  width: 75%;
+}
+
+.bar-skill-dot-nginx {
+  left: calc(75% - 5px);
+}
+
+.text-primary {
+  color: #2071e7;
+}
+
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+.grid-container {
+  display: grid;
+  grid: "picture header" auto "aside main" 1fr "footer footer" auto/350px auto;
+}
+@media (max-width: 480px) {
+  .grid-container {
+    display: grid;
+    grid: "header" auto "main" auto "picture" auto "aside" auto "footer" auto/auto;
+  }
+}
+
+.picture {
+  grid-area: picture;
+  padding: 3rem;
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+}
+.picture img {
+  border-radius: 50%;
+  margin-top: 45px;
+}
+
+header {
+  grid-area: header;
+  min-height: 30rem;
+  background: linear-gradient(to right, #2071e7, #00c3ff);
+  padding: 8rem 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  header {
+    padding: 5rem 2rem;
+  }
+}
+header h1 {
+  font-size: 6rem;
+  line-height: 8rem;
+  font-weight: 300;
+  letter-spacing: 3rem;
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 4rem;
+  }
+}
+header p {
+  letter-spacing: 0.3rem;
+}
+
+aside {
+  grid-area: aside;
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+  padding: 5rem;
+}
+aside .block {
+  margin-bottom: 5rem;
+}
+aside .block h3 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+aside .block p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+aside .block i {
+  font-size: 1.5rem;
+}
+
+.bar-skill {
+  margin: 2rem 0;
+  height: 5px;
+  background: #999;
+  position: relative;
+}
+
+main {
+  grid-area: main;
+  padding: 5rem;
+}
+@media (max-width: 480px) {
+  main {
+    padding: 5rem 1rem;
+  }
+}
+main h2 {
+  margin-bottom: 4rem;
+}
+main p {
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.stars-container {
+  display: flex;
+  margin: 2rem 0 3rem 0;
+  color: #999;
+}
+.stars-container i {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.experience {
+  display: flex;
+  margin: 10rem auto;
+}
+.experience .timeline {
+  text-align: center;
+  color: #999;
+  padding-right: 2rem;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experience .timeline p {
+  margin: 0;
+}
+.experience .content {
+  padding: 0 1rem;
+}
+
+footer {
+  grid-area: footer;
+  padding: 5rem;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  /*cc*/
+}
+@media (max-width: 480px) {
+  footer {
+    padding: 5rem 1.5rem;
+  }
+}
+footer .prefix {
+  background: linear-gradient(to right, #2980b9, #00c3ff);
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+footer h2 {
+  margin-bottom: 3rem;
+}
+footer button {
+  background: #333;
+  border: 0;
+  cursor: pointer;
+  transition: hover 0.5s;
+}
+footer button:hover {
+  opacity: 0.8;
+}
+footer button .postfix {
+  background: linear-gradient(to right, #2980b9, #00c3ff);
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+footer input {
+  border: 0;
+  min-h: 400px;
+  padding: 1rem 2rem;
+}
+@media (max-width: 480px) {
+  footer input {
+    min-width: 180px;
+  }
+}
+footer input::placeholder {
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

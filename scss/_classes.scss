@@ -1,0 +1,137 @@
+@import "variables";
+
+.title {
+  &-small {
+    letter-spacing: 0.3rem;
+    font-size: 1.7rem;
+  }
+}
+
+%bar-skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: $light;
+}
+
+
+%bar-skill-dot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: $dark;
+  top: -2.5px;
+  transform: rotate(45deg);
+}
+.bar-skill-progress-html {
+  @extend %bar-skill-progress;
+  width: 85%;
+}
+.bar-skill-dot-html {
+  @extend %bar-skill-dot ;
+  left: calc(85% - 5px);
+}
+
+
+.bar-skill-progress-css {
+  @extend %bar-skill-progress;
+  width: 73%;
+};
+.bar-skill-dot-css {
+  @extend %bar-skill-dot ;
+  left: calc(73% - 5px);
+};
+
+
+.bar-skill-progress-scss {
+  @extend %bar-skill-progress;
+  width: 55%;
+}
+.bar-skill-dot-scss {
+  @extend %bar-skill-dot;
+  left: calc(55% - 5px);
+}
+
+
+.bar-skill-progress-javascript{
+  @extend %bar-skill-progress;
+  width: 45%;
+}
+.bar-skill-dot-javascript{
+  @extend %bar-skill-dot;
+  left: calc(45% - 5px);
+}
+
+
+.bar-skill-dot-typescript{
+  @extend %bar-skill-dot;
+  left: calc(50% - 5px);
+}
+.bar-skill-progress-typescript{
+  @extend %bar-skill-progress;
+  width: 50%;
+}
+
+
+.bar-skill-dot-nodejs{
+  @extend %bar-skill-dot;
+  left: calc(65% - 5px);
+}
+.bar-skill-progress-nodejs{
+  @extend %bar-skill-progress;
+  width: 65%;
+}
+
+
+.bar-skill-dot-nestjs{
+  @extend %bar-skill-dot;
+  left: calc(25% - 5px);
+}
+.bar-skill-progress-nestjs{
+  @extend %bar-skill-progress;
+  width: 25%;
+}
+
+
+.bar-skill-progress-angular{
+  @extend %bar-skill-progress;
+  width: 60%;
+}
+.bar-skill-dot-angular{
+  @extend %bar-skill-dot;
+  left: calc(60% - 5px);
+}
+
+
+.bar-skill-progress-mongodb{
+  @extend %bar-skill-progress;
+  width: 25%;
+}
+.bar-skill-dot-mongodb{
+  @extend %bar-skill-dot;
+  left: calc(25% - 5px);
+}
+
+
+.bar-skill-progress-nginx{
+  @extend %bar-skill-progress;
+  width: 75%;
+}
+.bar-skill-dot-nginx{
+  @extend %bar-skill-dot;
+  left: calc(75% - 5px);
+}
+.text {
+  &-primary {
+    color: $primary
+  }
+}
+
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+
+
+

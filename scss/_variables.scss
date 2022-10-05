@@ -1,0 +1,16 @@
+
+
+$light: #00c3ff;
+$primary: #2071e7;
+$dark: #2980b9;
+$text: #333;
+$background:  #fafafa;
+$hint: #999;
+$border: #ddd;
+
+@font-face {
+  font-family: "Mulish";
+  src: url("./font/Mulish-VariableFont_wght.ttf") format("ttf"),
+  url("./font/Mulish-Italic-VariableFont_wght.ttf") format("ttf");
+}
+$font: "Mulish", sans-serif;
